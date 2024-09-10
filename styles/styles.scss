@@ -1,3 +1,62 @@
-h1 {
-    color: red;
+@font-face {
+  font-family: "Strawberry Bubblegum";
+  src: url(../assets/fonts/strawberry-bubblegum-font/Strawberrybubblegum-x3y38.ttf)
+    format(truetype);
+  font-style: normal;
+}
+
+body {
+  font-family: "Strawberry Bubblegum", sans-serif;
+  text-align: center;
+  background-color: #e2e4d2;
+  margin: 0;
+
+  a,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 50px;
+
+  .title-box {
+    width: 300px;
+    margin-bottom: 100px;
+
+    h1 {
+      font-size: 60px;
+      color: #283618;
+      margin: 0;
+    }
+  }
+
+  .start-btn {
+    font-family: "Strawberry Bubblegum", sans-serif;
+    font-size: 45px;
+    color: #bc6c25;
+    transition-duration: 0.5s;
+
+    &:hover,
+    &:focus {
+      transition-duration: 0.5s;
+      transform: scale(1.1);
+    }
+  }
+
+  .subtitle-box {
+    width: 250px;
+
+    h2 {
+      font-size: 30px;
+      color: #606c38;
+      margin: 0;
+    }
+  }
 }
