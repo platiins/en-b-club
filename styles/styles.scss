@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 @font-face {
   font-family: "Strawberry Bubblegum";
   src: url(../assets/fonts/strawberry-bubblegum-font/Strawberrybubblegum-x3y38.ttf)
@@ -18,13 +20,20 @@ body {
   }
 }
 
+.header,
+.footer {
+  @include flex(row, center, center, 0);
+  height: 5vh;
+
+  p {
+    margin: 0;
+    color: #606c38;
+  }
+}
+
 .first-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  gap: 50px;
+  @include flex(column, center, center, 50px);
+  height: 90vh;
 
   .title-box {
     width: 300px;

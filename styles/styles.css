@@ -14,13 +14,28 @@ body a, body:focus {
   color: inherit;
 }
 
-.first-page {
+.header,
+.footer {
   display: flex;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  gap: 0;
+  height: 5vh;
+}
+.header p,
+.footer p {
+  margin: 0;
+  color: #606c38;
+}
+
+.first-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
+  height: 90vh;
 }
 .first-page .title-box {
   width: 300px;
